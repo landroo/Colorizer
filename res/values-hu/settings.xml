@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="playernames">
+        <item>Két játékos</item>
+        <item>Három játékos</item>
+        <item>Négy játékos</item>
+    </string-array>
+    <string-array name="playervalues">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    
+    <string-array name="intervalnames">
+        <item>3 másodperc</item>
+        <item>5 másodperc</item>
+        <item>9 másodperc</item>
+        <item>12 másodperc</item>
+    </string-array>
+    <string-array name="intervalvalues">
+        <item>3</item>
+        <item>5</item>
+        <item>9</item>
+        <item>12</item>
+    </string-array>
+
+</resources>

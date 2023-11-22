@@ -1,0 +1,43 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_settings"
+        android:orderInCategory="100"
+        android:title="@string/menu_settings"
+        android:icon="@drawable/settings"/>
+
+	<item android:titleCondensed="@string/menu_exit" 
+		android:id="@+id/menu_exit"
+		android:title="@string/menu_exit" 
+		android:enabled="true"
+		android:icon="@drawable/exit"/>
+	
+	<item android:titleCondensed="@string/menu_new" 
+		android:id="@+id/menu_new"
+		android:title="@string/menu_new" 
+		android:enabled="true"
+		android:icon="@drawable/mnew"/>
+	
+	<item android:titleCondensed="@string/menu_undo" 
+		android:id="@+id/menu_undo"
+		android:title="@string/menu_undo" 
+		android:enabled="true"
+		android:icon="@drawable/mundo"/>
+	
+	<item android:titleCondensed="@string/menu_list" 
+		android:id="@+id/menu_list"
+		android:title="@string/menu_list" 
+		android:icon="@drawable/list"/>
+	
+	<item android:titleCondensed="@string/menu_login" 
+		android:id="@+id/menu_login"
+		android:title="@string/menu_login" 
+		android:icon="@drawable/login"/>
+
+	<item android:titleCondensed="@string/menu_logout" 
+		android:id="@+id/menu_logout"
+		android:title="@string/menu_logout" 
+		android:icon="@drawable/login"
+		android:visible="false"/>
+		
+</menu>

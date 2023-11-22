@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Colorizer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Beállítások</string>
+	<string name="menu_exit">Kilépés</string>
+	<string name="menu_new">Új játék</string>
+	<string name="menu_undo">Visszavonás</string>
+    <string name="menu_login">Csatlakozás</string>
+    <string name="menu_logout">Lecsatlakozás</string>
+    <string name="menu_list">Játékosok</string>	
+	
+	<string name="net_error">A kiszolgáló nem érhető el: </string> 
+	<string name="user_error">A becenév már foglalt!</string>
+	<string name="net_success">Sikeres csatlakozás!</string>
+    <string name="name_error">Kérem változtassa meg a nevét a beállítások menü alatt!</string>
+	<string name="alredy_error">Már belépett!</string>
+	<string name="first_login">Először be kell lépni!"</string>
+	<string name="only_offline">Csak a gép ellen!</string>
+	
+	<string name="send">Küldés</string>
+	<string name="cancel">Mégsem</string>
+	<string name="message">Üzenet</string>
+	<string name="no_player">Nincs bejelentkezett játékos!</string>
+	<string name="player_list">Játékos lista</string>
+	<string name="invite">Meghívás</string>
+
+</resources>

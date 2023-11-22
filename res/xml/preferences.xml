@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:robobunny="http://robobunny.com"
+    android:key="preference_screen">
+    
+    <PreferenceCategory
+        android:title="Display"
+        android:key="display_category">
+        
+	    <ListPreference 
+        	android:title="Player"
+    		android:summary="Set the number of players." 
+			android:entryValues="@array/playervalues" 
+			android:entries="@array/playernames"
+			android:defaultValue="2"
+			android:key="players">
+		</ListPreference>        
+        
+        <com.robobunny.SeekBarPreference
+            android:key="cellSize"
+            android:title="Cell size"
+            android:summary="Set size of cells."
+            android:defaultValue="20"
+            android:max="80"
+            robobunny:min="20"
+            robobunny:interval="4"/>        
+
+        <com.robobunny.SeekBarPreference
+            android:key="tableSizeX"
+            android:title="Table width"
+            android:summary="Set width of the play table in percent."
+            android:defaultValue="100"
+            android:max="300"        
+            robobunny:min="50"
+            robobunny:interval="10"
+            robobunny:unitsRight="%"/>
+        
+        <com.robobunny.SeekBarPreference
+            android:key="tableSizeY"
+            android:title="Table height"
+            android:summary="Set height of the play table in percent."
+            android:defaultValue="100"
+            android:max="300"        
+            robobunny:min="50"
+            robobunny:interval="10"
+            robobunny:unitsRight="%"/>        
+        		
+        <CheckBoxPreference
+            android:key="showscore"
+            android:title="Score"
+            android:summary="Display Score."
+            android:defaultValue="true"/>
+        
+        <CheckBoxPreference
+            android:key="zoom"
+            android:title="Enable zoom"
+            android:summary="Enable zoom in and zoom out."
+            android:defaultValue="true"/>
+		
+	</PreferenceCategory>
+	
+    <PreferenceCategory
+        android:key="display_category"
+        android:title="Network" >
+        <EditTextPreference
+            android:name="player"
+            android:defaultValue="Player"
+            android:key="player"
+            android:maxLength="10"
+            android:summary="Your nick name in player list."
+            android:title="Player name" />
+        <EditTextPreference
+            android:name="server"
+            android:defaultValue="landroo.dyndns.org"
+            android:key="server"
+            android:summary="The address of the game server."
+            android:title="Game server" />
+
+        <ListPreference
+            android:defaultValue="5"
+            android:entries="@array/intervalnames"
+            android:entryValues="@array/intervalvalues"
+            android:key="interval"
+            android:summary="Time interval is secounds for checking players."
+            android:title="Polling interval" >
+        </ListPreference>
+    </PreferenceCategory>    
+    
+</PreferenceScreen>

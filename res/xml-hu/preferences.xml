@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:robobunny="http://robobunny.com"
+    android:key="preference_screen" >
+
+    <PreferenceCategory
+        android:key="display_category"
+        android:title="Kijelző" >
+        <ListPreference
+            android:defaultValue="2"
+            android:entries="@array/playernames"
+            android:entryValues="@array/playervalues"
+            android:key="players"
+            android:summary="Játékosok számának beállítása."
+            android:title="Játékos" >
+        </ListPreference>
+
+        <com.robobunny.SeekBarPreference
+            android:defaultValue="20"
+            android:key="cellSize"
+            android:max="80"
+            android:summary="Szín cella méretének beállítása."
+            android:title="Szín cella méret"
+            robobunny:interval="4"
+            robobunny:min="20" />
+        <com.robobunny.SeekBarPreference
+            android:defaultValue="100"
+            android:key="tableSizeX"
+            android:max="300"
+            android:summary="A játéktér szélességének megadása százalékban."
+            android:title="Tábla szélesség"
+            robobunny:interval="10"
+            robobunny:min="50"
+            robobunny:unitsRight="%" />
+        <com.robobunny.SeekBarPreference
+            android:defaultValue="100"
+            android:key="tableSizeY"
+            android:max="300"
+            android:summary="A játéktér magasságának megadása százalékban."
+            android:title="Tábla magasság"
+            robobunny:interval="10"
+            robobunny:min="50"
+            robobunny:unitsRight="%" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="showscore"
+            android:summary="Eredmény kijelzése."
+            android:title="Eredmény" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="zoom"
+            android:summary="Nagyítás és kicsinyítés engedélyezése."
+            android:title="Nagyítás/kicsinyítés" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="display_category"
+        android:title="Hálóza" >
+        <EditTextPreference
+            android:name="player"
+            android:defaultValue="Player"
+            android:key="player"
+            android:maxLength="10"
+            android:summary="A játékos beceneve."
+            android:title="Játékos név" />
+        <EditTextPreference
+            android:name="server"
+            android:defaultValue="landroo.dyndns.org"
+            android:key="server"
+            android:summary="A játék kiszolgáló (Game server) állomás internet (IP) címe."
+            android:title="Játék kiszolgáló" />
+
+        <ListPreference
+            android:defaultValue="5"
+            android:entries="@array/intervalnames"
+            android:entryValues="@array/intervalvalues"
+            android:key="interval"
+            android:summary="A kiszolgáló ellenőrzésének sűrűsége, hogy jött-e üzenet."
+            android:title="Idő intervallum" >
+        </ListPreference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

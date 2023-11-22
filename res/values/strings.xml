@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Colorizer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+	<string name="menu_exit">Exit</string>
+	<string name="menu_new">New</string>
+	<string name="menu_undo">Undo</string>
+    <string name="menu_login">Login</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_list">Players</string>	
+	
+	<string name="net_error">Error access server:</string>
+    <string name="user_error">Username alredy in use!</string>
+    <string name="net_success">Login success!</string>
+    <string name="name_error">Please change your ninck name in settings!</string>
+    <string name="alredy_error">You are alredy logged in!</string>
+    <string name="first_login">First login!"</string>
+    <string name="only_offline">Only offline!</string>
+    
+    <string name="send">Send</string>
+    <string name="cancel">Cancel</string>
+    <string name="message">Message</string>
+    <string name="no_player">No player logged in!</string>
+    <string name="player_list">Partner list:</string>
+    <string name="invite">Invite</string>
+	
+</resources>
